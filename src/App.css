@@ -1,38 +1,142 @@
-.App {
-  text-align: center;
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif; 
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 15px ; 
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 1px;
+  background: #eca1a1;
+  cursor: pointer;
+  transition-duration: 0.4s;
+} 
+
+button:hover{ 
+  background-color: #f48484;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.login {
+  width: 100%;
   min-height: 100vh;
+  padding: 0 20px;
+  background: #494648;
+  display: flex; 
+  background-image: url('./bg.png');
+}
+
+.login .loginContainer {
+  padding: 60px;
+  margin: auto;
+  width: 100%;
+  max-width: 520px;
+  min-height: 600px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+  background: radial-gradient(
+    ellipse at left bottom,
+    #b04c81 0%,
+      #74546a 59%,
+      #4b203f  100%
+  );
+  box-shadow: 0 50px 70px -20px rgba(0, 0, 0, 0.8);
 }
 
-.App-link {
-  color: #61dafb;
+.login .loginContainer label {
+  color: rgb(222, 215, 215);
+  margin: 14px 0;
+  display: block;
+  font-size: 22px;
+  line-height: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.login .loginContainer input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 19px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  letter-spacing: 1px;
 }
+
+.login .loginContainer .btnContainer {
+  width: 100%;
+  padding: 24px 0;
+}
+
+.login .loginContainer .btnContainer p {
+  margin: 14px 0 0 0;
+  text-align: right;
+  color: #fff;
+}
+
+.login .loginContainer .btnContainer p span {
+  color: #0a022e;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin-left: 5px;
+  cursor: pointer;
+  transition: all 400ms ease-in-out;
+}
+
+.login .loginContainer .btnContainer p span:hover {
+  color: red;
+}
+
+.login .loginContainer .errorMsg {
+  color: red;
+  font-size: 16px;
+}
+
+.hero { 
+  background-image: url('https://assets.justinmind.com/wp-content/uploads/2020/02/website-background-design-guide-768x492.png');
+  width: 100%;
+  min-height: 100vh; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+ 
+}
+
+.hero nav {
+  background: #4B2A53;
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero nav h2 {
+  color: rgb(199, 192, 192);
+}
+
+.hero nav button {
+  width: 100px;
+  padding: 10px 0;
+  background: #6E4468; 
+  transition-duration: 0.4s;
+}  
+
+.hero nav button:hover{
+  background-color: #942775;
+}
+ 
+
+
+
+
